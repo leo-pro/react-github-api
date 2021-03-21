@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+<h2 align="center"> 💻 Explore Github - React App</h2>
+<h4>React App develop integrated with Github API.</h4>
+<p>Search by <code>organization/repository</code> and add to your list. Click at button <code>Details</code> to see more information about repository include <code>issues</code> filtered by <code>All</code><code>Open</code><code>Closed</code></p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>🖥️ Demo: <a href="https://searchrepos.herokuapp.com/" target="_blank">Click here</a></p>
 
-## Available Scripts
+## 🎬 Preview
+<img src="https://devleo.com.br/assets/images/mockups/mockup-web-searchrepo.png" width="400px" height="auto">
 
-In the project directory, you can run:
+## Install and Run
+To install and run the application:
 
-### `yarn start`
+* Clone repository and install dependencies: 
+```
+  git clone https://github.com/leo-pro/react-github-api/
+  cd react-github-api
+  yarn or npm install
+```
+* Running the project into your browser at http://localhost:3000
+```
+  yarn start or npm run start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Techs
+<p>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+  <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white">
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+##
+Made With ❤️ & ReactJS by [Leonardo Alves](https://github.com/leo-pro)
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
