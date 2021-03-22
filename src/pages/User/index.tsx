@@ -1,13 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useRouteMatch, Link } from 'react-router-dom';
-import { HiOutlineUsers } from 'react-icons/hi';
-import {
-  GoTriangleLeft,
-  GoTriangleRight,
-  GoRepo,
-  GoGist,
-  GoOrganization,
-} from 'react-icons/go';
+import { HiOutlineUsers, HiOutlineEye } from 'react-icons/hi';
+import { GoTriangleLeft, GoRepo, GoGist } from 'react-icons/go';
 import api from '../../services/user';
 
 import imgLogo from '../../assets/logo.png';
@@ -135,13 +129,13 @@ const Repos: React.FC = () => {
               <p>{repository.description}</p>
             </div>
 
-            <GoTriangleRight size="20" />
+            <HiOutlineEye size="20" />
           </a>
         ))}
       </Repositories>
 
       <StarredRepositories>
-        <h2>Repositórios mais visitados pelo user:</h2>
+        <h2>Repositórios mais visitados pelo usuário:</h2>
         {starredRepositories.map((starredRepo) => (
           <a
             key={starredRepo.id}
@@ -154,7 +148,7 @@ const Repos: React.FC = () => {
               <p>{starredRepo.description}</p>
             </div>
 
-            <GoTriangleRight size="20" />
+            <HiOutlineEye size="20" />
           </a>
         ))}
       </StarredRepositories>

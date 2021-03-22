@@ -6,7 +6,7 @@ import {
   GoTriangleLeft,
   GoTriangleRight,
 } from 'react-icons/go';
-import { HiOutlineStar } from 'react-icons/hi';
+import { HiOutlineEye, HiOutlineStar } from 'react-icons/hi';
 import api from '../../services/api';
 
 import imgLogo from '../../assets/logo.png';
@@ -116,7 +116,7 @@ const Repos = (): JSX.Element => {
               <p>{issue.user.login}</p>
             </div>
 
-            <GoTriangleRight size="20" />
+            <HiOutlineEye size="20" />
           </a>
         ))}
       </Issues>

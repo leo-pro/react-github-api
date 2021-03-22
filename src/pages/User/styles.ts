@@ -15,7 +15,10 @@ export const Header = styled.header`
     color: #cbd3db;
     border: 1px solid #2b3137;
     border-radius: 6px;
+
     transition: color 0.2s;
+    transition: background-color 0.5s;
+    transition: border-color 0.7s;
 
     padding: 5px 20px;
 
@@ -108,29 +111,40 @@ export const UserInfo = styled.section`
 
 export const Repositories = styled.div`
   margin-top: 40px;
+
   a {
-    background: #fff;
-    border-radius: 5px;
     width: 100%;
     padding: 24px;
     display: block;
-    text-decoration: none;
     display: flex;
     align-items: center;
-    transition: transform 0.2s;
+
+    background: #0c1015;
+    border: 1px solid #30363e;
+    border-radius: 6px;
+    text-decoration: none;
+
+    transition: background-color 0.5s;
+    transition: border-color 0.7s;
+
     &:hover {
-      transform: translateX(10px);
+      background-color: ${shade(0.2, '#22272f')};
+      border-color: #f1f1f1;
     }
+
     & + a {
       margin-top: 16px;
     }
+
     div {
       margin: 0 16px;
       flex: 1;
+
       strong {
         font-size: 20px;
-        color: #3d3d4d;
+        color: #cad2db;
       }
+
       p {
         font-size: 18px;
         color: #a8a8b3;
@@ -139,11 +153,12 @@ export const Repositories = styled.div`
     }
     svg {
       margin-left: auto;
-      color: #cbcbd6;
+      color: #cad2db;
     }
   }
   h3 {
     padding: 15px;
+    font-size: 1.5rem;
     color: #cad2db;
     text-align: center;
   }
@@ -151,29 +166,41 @@ export const Repositories = styled.div`
 
 export const StarredRepositories = styled.div`
   margin-top: 40px;
+
   a {
-    background: #fff;
-    border-radius: 5px;
     width: 100%;
     padding: 24px;
     display: block;
     text-decoration: none;
     display: flex;
     align-items: center;
-    transition: transform 0.2s;
+
+    background: #0c1015;
+    border: 1px solid #30363e;
+    border-radius: 6px;
+    text-decoration: none;
+
+    transition: background-color 0.5s;
+    transition: border-color 0.7s;
+
     &:hover {
-      transform: translateX(10px);
+      background-color: ${shade(0.2, '#22272f')};
+      border-color: #f1f1f1;
     }
+
     & + a {
       margin-top: 16px;
     }
+
     div {
       margin: 0 16px;
       flex: 1;
+
       strong {
         font-size: 20px;
-        color: #3d3d4d;
+        color: #cad2db;
       }
+
       p {
         font-size: 18px;
         color: #a8a8b3;
@@ -182,17 +209,19 @@ export const StarredRepositories = styled.div`
     }
     svg {
       margin-left: auto;
-      color: #cbcbd6;
+      color: #cad2db;
     }
   }
   h2 {
     padding: 15px;
-    color: #32a7e5;
+    font-size: 1.5rem;
+    color: #cad2db;
     text-align: center;
   }
   h3 {
     padding: 15px;
-    color: #3d3d4d;
+    font-size: 1.5rem;
+    color: #cad2db;
     text-align: center;
   }
 `;

@@ -110,19 +110,23 @@ export const Issues = styled.div`
   margin-top: 40px;
 
   a {
-    background: #fff;
-    border-radius: 5px;
     width: 100%;
     padding: 24px;
     display: block;
-    text-decoration: none;
-
     display: flex;
     align-items: center;
-    transition: transform 0.2s;
+
+    background: #0c1015;
+    border: 1px solid #30363e;
+    border-radius: 6px;
+    text-decoration: none;
+
+    transition: background-color 0.5s;
+    transition: border-color 0.7s;
 
     &:hover {
-      transform: translateX(10px);
+      background-color: ${shade(0.2, '#22272f')};
+      border-color: #f1f1f1;
     }
 
     & + a {
@@ -135,7 +139,7 @@ export const Issues = styled.div`
 
       strong {
         font-size: 20px;
-        color: #3d3d4d;
+        color: #cad2db;
       }
 
       p {
@@ -147,7 +151,7 @@ export const Issues = styled.div`
 
     svg {
       margin-left: auto;
-      color: #cbcbd6;
+      color: #cad2db;
     }
   }
 `;

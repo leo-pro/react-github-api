@@ -21,7 +21,8 @@ export const Header = styled.header`
 
     color: #cbd3db;
     transition: color 0.2s;
-    transition: border-color 0.3s;
+    transition: background-color 0.5s;
+    transition: border-color 0.7s;
 
     padding: 5px 20px;
 
@@ -91,8 +92,8 @@ export const Form = styled.form<FormProps>`
     color: #fff;
 
     font-weight: 400;
-    transition: background-color 0.2s;
-    transition: border-color 0.3s;
+    transition: background-color 0.5s;
+    transition: border-color 0.7s;
 
     &:hover {
       background: ${shade(0.2, '#22272f')};
