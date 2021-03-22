@@ -132,7 +132,13 @@ export const Repositories = styled.div`
     border-radius: 6px;
     text-decoration: none;
 
-    transition: transform 0.2s;
+    transition: background-color 0.5s;
+    transition: border-color 0.7s;
+
+    &:hover {
+      background: ${shade(0.2, '#22272f')};
+      border-color: #f1f1f1;
+    }
 
     & + a {
       margin-top: 16px;
