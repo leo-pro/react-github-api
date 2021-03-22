@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { useRouteMatch, Link } from 'react-router-dom';
-import { FiChevronLeft, FiChevronRight, FiFolder } from 'react-icons/fi';
+import { HiOutlineUsers } from 'react-icons/hi';
+import {
+  GoTriangleLeft,
+  GoTriangleRight,
+  GoRepo,
+  GoGist,
+  GoOrganization,
+} from 'react-icons/go';
 import api from '../../services/user';
 
-import imgLogo from '../../assets/logo.svg';
-import imgLoading from '../../assets/loading.gif';
+import imgLogo from '../../assets/logo.png';
 
 import { Header, UserInfo, Repositories, StarredRepositories } from './styles';
 
@@ -15,6 +21,7 @@ interface RepositoryParams {
 interface UserData {
   login: string;
   name: string;
+  bio: string;
   id: number;
   avatar_url: string;
   html_url: string;
@@ -67,13 +74,12 @@ const Repos: React.FC = () => {
     <>
       <Header>
         <Link to="/">
-          <FiFolder size={16} />
-          Repos
+          <GoRepo size={16} /> Repos
         </Link>
         <img src={imgLogo} alt="Github Explorer" />
         <Link to="/users">
-          <FiChevronLeft size={16} />
-          voltar
+          <GoTriangleLeft size={16} />
+          Voltar
         </Link>
       </Header>
 
@@ -83,33 +89,40 @@ const Repos: React.FC = () => {
             <img src={user.avatar_url} alt={user.login} />
             <div>
               <strong>{user.login}</strong>
+              <p>{user.bio}</p>
               <p>{user.name}</p>
             </div>
           </header>
           <ul>
             <li>
               <strong>{user.public_repos}</strong>
-              <span>Public repos</span>
+              <span>
+                <GoRepo size={16} />
+                Repositórios
+              </span>
             </li>
             <li>
               <strong>{user.public_gists}</strong>
-              <span>Public gists</span>
+              <span>
+                <GoGist size={16} />
+                Gists
+              </span>
             </li>
             <li>
               <strong>{user.followers}</strong>
-              <span>Followers</span>
+              <span>
+                <HiOutlineUsers size={16} />
+                Followers
+              </span>
             </li>
           </ul>
         </UserInfo>
       ) : (
-        <p>
-          <img src={imgLoading} width="32" alt="Carregando, aguarde" />
-          Carregando...
-        </p>
+        <p>Carregando...</p>
       )}
 
       <Repositories>
-        <h3>Repositórios do user:</h3>
+        <h3>Repositórios</h3>
         {repositories.map((repository) => (
           <a
             key={repository.id}
@@ -122,7 +135,7 @@ const Repos: React.FC = () => {
               <p>{repository.description}</p>
             </div>
 
-            <FiChevronRight size="20" />
+            <GoTriangleRight size="20" />
           </a>
         ))}
       </Repositories>
@@ -141,7 +154,7 @@ const Repos: React.FC = () => {
               <p>{starredRepo.description}</p>
             </div>
 
-            <FiChevronRight size="20" />
+            <GoTriangleRight size="20" />
           </a>
         ))}
       </StarredRepositories>

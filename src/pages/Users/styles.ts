@@ -115,38 +115,48 @@ export const Error = styled.span`
 export const Users = styled.div`
   margin-top: 40px;
   max-width: 700px;
+
   a {
-    background: #fff;
-    border-radius: 5px;
     width: 100%;
-    padding: 24px;
+    padding: 15px 20px;
     display: block;
-    text-decoration: none;
     display: flex;
     align-items: center;
+
+    background: #0c1015;
+    border: 1px solid #30363e;
+    border-radius: 6px;
+
+    text-decoration: none;
     transition: transform 0.2s;
-    &:hover {
-      transform: translateX(10px);
-    }
+
     & + a {
       margin-top: 16px;
     }
+
     img {
       width: 64px;
       height: 64px;
       border-radius: 50%;
     }
+
     div {
       margin: 0 16px;
       flex: 1;
       strong {
         font-size: 20px;
-        color: #3d3d4d;
+        color: #cad2db;
+      }
+      span {
+        font-size: 16px;
+        color: #a8a8b3;
+        font-weight: 400;
       }
       p {
-        font-size: 18px;
+        font-size: 16px;
         color: #a8a8b3;
-        margin-top: 4px;
+        margin-top: 1px;
+        font-weight: 400;
       }
     }
     svg {

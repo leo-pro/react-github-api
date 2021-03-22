@@ -1,6 +1,6 @@
 import React, { useState, useEffect, FormEvent } from 'react';
-import { FiChevronRight } from 'react-icons/fi';
-import { HiSearch, HiOutlineFolderOpen } from 'react-icons/hi';
+import { HiSearch, HiOutlineEye } from 'react-icons/hi';
+import { GoRepo } from 'react-icons/go';
 import { Link } from 'react-router-dom';
 import api from '../../services/user';
 
@@ -10,6 +10,8 @@ import { Header, Title, Form, Users, Error } from './styles';
 
 interface UserData {
   login: string;
+  name: string;
+  bio: string;
   avatar_url: string;
   html_url: string;
 }
@@ -58,7 +60,7 @@ const User: React.FC = () => {
       <Header>
         <img src={imgLogo} alt="Github Explorer" />
         <Link to="/">
-          <HiOutlineFolderOpen size={16} /> Repos
+          <GoRepo size={16} /> Repos
         </Link>
       </Header>
       <Title>Encontre usuários do Github</Title>
@@ -81,11 +83,13 @@ const User: React.FC = () => {
           <Link key={user.login} to={`user/${user.login}`}>
             <img src={user.avatar_url} alt={user.login} />
             <div>
-              <strong>{user.login}</strong>
+              <strong>{user.name}</strong>
+              <span> {user.login}</span>
+              <p>{user.bio}</p>
               <p>{user.html_url}</p>
             </div>
 
-            <FiChevronRight size="20" />
+            <HiOutlineEye size="20" />
           </Link>
         ))}
       </Users>

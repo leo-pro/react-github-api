@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { useRouteMatch, Link } from 'react-router-dom';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import {
+  GoIssueOpened,
+  GoRepoForked,
+  GoTriangleLeft,
+  GoTriangleRight,
+} from 'react-icons/go';
+import { HiOutlineStar } from 'react-icons/hi';
 import api from '../../services/api';
 
-import imgLogo from '../../assets/logo.svg';
+import imgLogo from '../../assets/logo.png';
 
 import { Header, RepositoryInfo, Issues } from './styles';
 
@@ -53,8 +59,8 @@ const Repos = (): JSX.Element => {
       <Header>
         <img src={imgLogo} alt="Github Explorer" />
         <Link to="/">
-          <FiChevronLeft size={16} />
-          voltar
+          <GoTriangleLeft size={16} />
+          Voltar
         </Link>
       </Header>
 
@@ -73,15 +79,23 @@ const Repos = (): JSX.Element => {
           <ul>
             <li>
               <strong>{repository.stargazers_count}</strong>
-              <span>Star</span>
+              <span>
+                <HiOutlineStar size={16} />
+                Stars
+              </span>
             </li>
             <li>
               <strong>{repository.forks_count}</strong>
-              <span>Forks</span>
+              <span>
+                <GoRepoForked size={16} />
+                Forks
+              </span>
             </li>
             <li>
               <strong>{repository.open_issues_count}</strong>
-              <span>Issues</span>
+              <span>
+                <GoIssueOpened size={16} /> Issues
+              </span>
             </li>
           </ul>
         </RepositoryInfo>
@@ -102,7 +116,7 @@ const Repos = (): JSX.Element => {
               <p>{issue.user.login}</p>
             </div>
 
-            <FiChevronRight size="20" />
+            <GoTriangleRight size="20" />
           </a>
         ))}
       </Issues>

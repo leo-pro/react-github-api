@@ -117,20 +117,18 @@ export const Repositories = styled.div`
   max-width: 700px;
 
   a {
-    background: #fff;
-    border-radius: 5px;
     width: 100%;
-    padding: 24px;
+    padding: 15px 20px;
     display: block;
-    text-decoration: none;
-
     display: flex;
     align-items: center;
-    transition: transform 0.2s;
 
-    &:hover {
-      transform: translateX(10px);
-    }
+    background: #0c1015;
+    border: 1px solid #30363e;
+    border-radius: 6px;
+    text-decoration: none;
+
+    transition: transform 0.2s;
 
     & + a {
       margin-top: 16px;
@@ -148,7 +146,7 @@ export const Repositories = styled.div`
 
       strong {
         font-size: 20px;
-        color: #3d3d4d;
+        color: #cad2db;
       }
 
       p {

@@ -1,6 +1,5 @@
 import React, { useState, useEffect, FormEvent } from 'react';
-import { FiChevronRight } from 'react-icons/fi';
-import { HiSearch, HiUserGroup } from 'react-icons/hi';
+import { HiSearch, HiUserGroup, HiOutlineEye } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
@@ -99,7 +98,7 @@ const Dashboard = (): JSX.Element => {
               <p>{repository.description}</p>
             </div>
 
-            <FiChevronRight size="20" />
+            <HiOutlineEye size="20" />
           </Link>
         ))}
       </Repositories>

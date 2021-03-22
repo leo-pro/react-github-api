@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
 export const Header = styled.header`
   display: flex;
@@ -9,16 +10,33 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #a8a8b3;
+
+    background-color: #22272f;
+    color: #cbd3db;
+    border: 1px solid #2b3137;
+    border-radius: 6px;
     transition: color 0.2s;
 
+    padding: 5px 20px;
+
+    font-size: 1rem;
+    font-weight: 400;
+
     &:hover {
-      color: #666;
+      background-color: ${shade(0.2, '#22272f')};
+      border-color: #f1f1f1;
     }
 
     svg {
-      margin-right: 4px;
+      vertical-align: middle;
+      margin-right: 5px;
     }
+  }
+
+  img {
+    width: 60px;
+    margin-right: 4px;
+    display: none;
   }
 `;
 
@@ -27,20 +45,23 @@ export const RepositoryInfo = styled.section`
 
   header {
     display: flex;
+    max-width: 100%;
     align-items: center;
+    flex-direction: column;
 
     img {
-      width: 120px;
-      height: 120px;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
     }
 
     div {
-      margin-left: 24px;
+      text-align: center;
 
       strong {
         font-size: 36px;
-        color: #3d3d4d;
+        color: #cad2db;
+        text-align: center;
       }
 
       p {
@@ -52,20 +73,23 @@ export const RepositoryInfo = styled.section`
   }
 
   ul {
+    max-width: 100%;
     display: flex;
+    justify-content: space-evenly;
+
     list-style: none;
+
     margin-top: 40px;
 
     li {
-      & + li {
-        margin-left: 80px;
-      }
+      text-align: center;
 
       strong {
         display: block;
-        font-size: 36px;
+        font-size: 28px;
+        text-align: center;
 
-        color: #3d3d4d;
+        color: #cad2db;
       }
     }
 
@@ -73,6 +97,11 @@ export const RepositoryInfo = styled.section`
       display: block;
       margin-top: 4px;
       color: #6c6c80;
+
+      svg {
+        vertical-align: middle;
+        margin-right: 5px;
+      }
     }
   }
 `;
