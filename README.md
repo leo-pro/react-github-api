@@ -10,7 +10,6 @@
 ## Install and Run
 To install and run the application:
 
-* Clone repository and install dependencies: 
 ```
   git clone https://github.com/leo-pro/react-github-api/
   cd react-github-api
