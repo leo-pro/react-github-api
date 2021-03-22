@@ -1,6 +1,9 @@
 <h2 align="center"> 💻 Explore Github - React App</h2>
+
 <h4>Aplicação em React.js para explorar Users and Repos consumindo endpoints da API do Github</h4>
+
 <p>Pesquisando por <code>usuario/repositório</code> é possível adicionar e salvar os repositórios no seu navegador. Clicando sobre os repositórios, é possível visualizar os detalhes do repositório incluindo quantidade de estrelas e issues.</p>
+<p>Na página <code>/users</code></p> é possível pesquisar e salvar os perfis dos usuários do Github. Clique sobre cada usuário para visualizar mais informações, como: repositórios públicos, forks e seguidores.
 
 <p>🖥️ Demo: <a href="https://react-github.vercel.app/" target="_blank">Click here</a></p>
 
