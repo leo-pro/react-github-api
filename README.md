@@ -2,10 +2,10 @@
 <h4>React App develop integrated with Github API.</h4>
 <p>Search by <code>organization/repository</code> and add to your list. Click at button <code>Details</code> to see more information about repository include <code>issues</code> filtered by <code>All</code><code>Open</code><code>Closed</code></p>
 
-<p>🖥️ Demo: <a href="https://searchrepos.herokuapp.com/" target="_blank">Click here</a></p>
+<p>🖥️ Demo: <a href="https://react-github.vercel.app/" target="_blank">Click here</a></p>
 
 ## 🎬 Preview
-<img src="https://devleo.com.br/assets/images/mockups/mockup-web-searchrepo.png" width="400px" height="auto">
+<img src="https://raw.githubusercontent.com/leo-pro/react-github-api/dev-env/public/preview.jpg" width="400px" height="auto">
 
 ## Install and Run
 To install and run the application:
