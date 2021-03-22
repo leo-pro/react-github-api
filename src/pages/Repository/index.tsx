@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useRouteMatch, Link } from 'react-router-dom';
-import {
-  GoIssueOpened,
-  GoRepoForked,
-  GoTriangleLeft,
-  GoTriangleRight,
-} from 'react-icons/go';
+import { GoIssueOpened, GoRepoForked, GoTriangleLeft } from 'react-icons/go';
 import { HiOutlineEye, HiOutlineStar } from 'react-icons/hi';
 import api from '../../services/api';
 
