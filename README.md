@@ -1,11 +1,11 @@
 <h2 align="center"> 💻 Explore Github - React App</h2>
-<h4>React App develop integrated with Github API.</h4>
-<p>Search by <code>organization/repository</code> and add to your list. Click at button <code>Details</code> to see more information about repository include <code>issues</code> filtered by <code>All</code><code>Open</code><code>Closed</code></p>
+<h4>Aplicação em React.js para explorar Users and Repos consumindo endpoints da API do Github</h4>
+<p>Pesquisando por <code>usuario/repositório</code> é possível adicionar e salvar os repositórios no seu navegador. Clicando sobre os repositórios, é possível visualizar os detalhes do repositório incluindo quantidade de estrelas e issues.</p>
 
 <p>🖥️ Demo: <a href="https://react-github.vercel.app/" target="_blank">Click here</a></p>
 
 ## 🎬 Preview
-<img src="https://raw.githubusercontent.com/leo-pro/react-github-api/dev-env/public/preview.jpg" width="400px" height="auto">
+<img src="https://raw.githubusercontent.com/leo-pro/react-github-api/dev-env/public/preview.jpg" width="700px" height="auto">
 
 ## Install and Run
 To install and run the application:
