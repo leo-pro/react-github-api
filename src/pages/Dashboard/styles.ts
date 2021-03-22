@@ -116,13 +116,15 @@ export const Error = styled.span`
 
 export const Repositories = styled.div`
   margin-top: 40px;
-  max-width: 700px;
+  max-width: 100%;
 
   a {
     width: 100%;
     padding: 15px 20px;
+
     display: block;
     display: flex;
+    flex: 1;
     align-items: center;
 
     background: #0c1015;
