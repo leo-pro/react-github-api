@@ -41,7 +41,7 @@ interface StarredRepo {
   description: string;
 }
 
-const Repos: React.FC = () => {
+const Repos = (): JSX.Element => {
   const [user, setUser] = useState<UserData | null>(null);
   const [repositories, setRepos] = useState<Repo[]>([]);
   const [starredRepositories, setStarredrepositories] = useState<StarredRepo[]>(

@@ -16,7 +16,7 @@ interface UserData {
   html_url: string;
 }
 
-const User: React.FC = () => {
+const User = (): JSX.Element => {
   const [newUser, setNewUser] = useState('');
   const [inputError, setinputError] = useState('');
 
